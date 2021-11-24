@@ -9,7 +9,7 @@ columns = ['PCx', 'PCy', 'PCz', 'sigma range', '# of bands for sigma range', '2s
 df = pd.read_csv(path, sep=';', skiprows=2, names=columns, encoding='utf-16 le')
 df = df.astype(float)
 
-'''get min and max values'''
+'''get min and max sigma values'''
 sigma_min=df['sigma range'].min()
 sigma_max=df['sigma range'].max()
 
